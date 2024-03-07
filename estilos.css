@@ -1,0 +1,32 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #ff0000;
+}
+
+#rose {
+    width: 100px;
+    height: 100px;
+    background-image: url('rose.png');
+    background-size: cover;
+    animation: bloom 3s forwards;
+    opacity: 0;
+}
+
+@keyframes bloom {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
