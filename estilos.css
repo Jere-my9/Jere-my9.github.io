@@ -1,32 +1,44 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #5a4ff7;
     font-family: Arial, sans-serif;
 }
 
 .container {
     text-align: center;
+    margin-top: 50px;
 }
 
 h1 {
-    color: #ff0000;
+    color: #ff0066;
+}
+
+#rose-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
 }
 
 #rose {
-    width: 100px;
-    height: 100px;
-    background-image: url('rose.png');
-    background-size: cover;
-    animation: bloom 3s forwards;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-@keyframes bloom {
-    from {
-        transform: scale(0);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5a4ff7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7240f5;
 }
